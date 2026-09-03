@@ -122,3 +122,39 @@ WHERE users.role = ?
 2026-09-03 16:38:46,906 | INFO | insurance_app | Login successful : admin@example.com
 2026-09-03 16:38:52,450 | INFO | insurance_app | Verifying claim document : 1, status VERIFIED
 2026-09-03 16:38:52,644 | INFO | insurance_app | Claim document verified successfully : 1
+2026-09-03 16:56:18,738 | INFO | insurance_app | Application starting.
+2026-09-03 16:56:18,738 | INFO | insurance_app | Checking default admin.
+2026-09-03 16:56:18,793 | INFO | insurance_app | Default admin already exists.
+2026-09-03 16:56:18,793 | INFO | insurance_app | Application started successfully.
+2026-09-03 16:57:35,811 | INFO | insurance_app | Creating assessment for claim : 1
+2026-09-03 16:57:35,955 | INFO | insurance_app | Assessment created successfully : 1
+2026-09-03 16:58:39,339 | WARNING | insurance_app | HTTP 404 : Not Found : GET /.well-known/appspecific/com.chrome.devtools.json
+2026-09-03 16:59:33,410 | INFO | insurance_app | Creating settlement for claim : 1
+2026-09-03 16:59:33,415 | WARNING | insurance_app | HTTP 400 : Only approved claims can be settled. : POST /api/v1/claims/1/settle
+2026-09-03 17:00:45,414 | INFO | insurance_app | Approving claim : 1
+2026-09-03 17:00:49,006 | INFO | insurance_app | Claim approved successfully : 1
+2026-09-03 17:01:42,946 | INFO | insurance_app | Creating settlement for claim : 1
+2026-09-03 17:01:43,822 | INFO | insurance_app | Settlement letter PDF generated : generated_files/settlement_letters\settlement_1.pdf
+2026-09-03 17:01:43,837 | INFO | insurance_app | Settlement created successfully : 1
+2026-09-03 17:03:06,786 | INFO | insurance_app | Fetching settlements list.
+2026-09-03 17:03:37,537 | INFO | insurance_app | Fetching settlement by id : 1
+2026-09-03 17:04:12,100 | INFO | insurance_app | Generating monthly premium collection report.
+2026-09-03 17:04:12,332 | INFO | insurance_app | Excel export generated : monthly_premium_collection.xlsx
+2026-09-03 17:04:26,671 | INFO | insurance_app | Generating agent performance report.
+2026-09-03 17:04:26,698 | INFO | insurance_app | Excel export generated : agent_performance.xlsx
+2026-09-03 17:04:38,442 | INFO | insurance_app | Generating customer policy history report.
+2026-09-03 17:04:38,476 | INFO | insurance_app | Excel export generated : customer_policy_history.xlsx
+2026-09-03 17:05:22,903 | INFO | insurance_app | Generating dashboard summary.
+2026-09-03 17:06:07,187 | INFO | insurance_app | Generating policy-wise premium report.
+2026-09-03 17:06:35,526 | INFO | insurance_app | Generating customer policy history report.
+2026-09-03 17:07:06,125 | INFO | insurance_app | Generating claim settlement report.
+2026-09-03 17:07:31,353 | INFO | insurance_app | Generating agent performance report.
+2026-09-03 17:07:56,331 | INFO | insurance_app | Generating monthly premium collection report.
+2026-09-03 17:08:22,101 | INFO | insurance_app | Generating monthly claim statistics report.
+2026-09-03 17:08:50,687 | WARNING | insurance_app | HTTP 401 : Could not validate credentials. : GET /api/v1/dashboard/reports/claim-type-breakdown
+2026-09-03 17:08:54,204 | WARNING | insurance_app | HTTP 401 : Could not validate credentials. : GET /api/v1/dashboard/reports/claim-type-breakdown
+2026-09-03 17:09:01,283 | INFO | insurance_app | Login attempt : admin@example.com
+2026-09-03 17:09:01,627 | INFO | insurance_app | Login successful : admin@example.com
+2026-09-03 17:09:18,350 | INFO | insurance_app | Generating claim type breakdown report.
+2026-09-03 17:09:42,717 | INFO | insurance_app | Generating top paying customers report.
+2026-09-03 17:10:08,712 | INFO | insurance_app | Generating policy status distribution report.

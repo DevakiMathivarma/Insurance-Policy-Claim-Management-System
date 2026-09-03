@@ -1,0 +1,124 @@
+2026-09-02 14:09:44,813 | INFO | insurance_app | Application starting.
+2026-09-02 14:09:44,813 | INFO | insurance_app | Checking default admin.
+2026-09-02 14:09:44,937 | ERROR | insurance_app | Default admin creation failed : (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.full_name AS users_full_name, users.email AS users_email, users.phone AS users_phone, users.password_hash AS users_password_hash, users.role AS users_role, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.role = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('SUPER_ADMIN', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-02 14:09:44,938 | INFO | insurance_app | Application started successfully.
+2026-09-02 15:21:43,165 | INFO | insurance_app | Application starting.
+2026-09-02 15:21:43,166 | INFO | insurance_app | Checking default admin.
+2026-09-02 15:21:43,846 | INFO | insurance_app | Default admin created successfully : admin@example.com
+2026-09-02 15:21:43,846 | INFO | insurance_app | Application started successfully.
+2026-09-02 18:30:24,186 | INFO | insurance_app | Login attempt : admin@example.com
+2026-09-02 18:30:24,950 | INFO | insurance_app | Login successful : admin@example.com
+2026-09-02 18:31:15,767 | INFO | insurance_app | Login attempt : admin@example.com
+2026-09-02 18:31:16,027 | WARNING | insurance_app | HTTP 401 : Invalid email or password. : POST /api/v1/auth/login
+2026-09-02 18:31:28,081 | INFO | insurance_app | Login attempt : admin@example.com
+2026-09-02 18:31:28,340 | INFO | insurance_app | Login successful : admin@example.com
+2026-09-02 18:32:18,874 | INFO | insurance_app | Refresh token requested.
+2026-09-02 18:32:18,875 | INFO | insurance_app | Access token refreshed : admin@example.com
+2026-09-02 18:33:00,762 | INFO | insurance_app | Registration started : ravi.agent@example.com, requested role=INSURANCE_AGENT
+2026-09-02 18:33:01,223 | INFO | insurance_app | User registered successfully : ravi.agent@example.com, role=INSURANCE_AGENT
+2026-09-02 18:33:39,024 | INFO | insurance_app | Registration started : sunita.claims@example.com, requested role=CLAIMS_OFFICER
+2026-09-02 18:33:39,471 | INFO | insurance_app | User registered successfully : sunita.claims@example.com, role=CLAIMS_OFFICER
+2026-09-02 18:35:23,868 | INFO | insurance_app | Registration started : karan.finance@example.com, requested role=FINANCE_OFFICER
+2026-09-02 18:35:24,338 | INFO | insurance_app | User registered successfully : karan.finance@example.com, role=FINANCE_OFFICER
+2026-09-02 18:37:59,238 | INFO | insurance_app | Setting user activation : 2, is_active=False
+2026-09-02 18:37:59,424 | INFO | insurance_app | User activation updated successfully : 2, is_active=False
+2026-09-02 18:38:42,712 | INFO | insurance_app | Setting user activation : 2, is_active=True
+2026-09-02 18:38:43,813 | INFO | insurance_app | User activation updated successfully : 2, is_active=True
+2026-09-02 18:42:36,062 | INFO | insurance_app | Creating plan : Comprehensive Health Cover
+2026-09-02 18:42:36,183 | INFO | insurance_app | Plan created successfully : 1
+2026-09-02 18:44:26,956 | INFO | insurance_app | Creating plan : Term Life Secure
+2026-09-02 18:44:27,120 | INFO | insurance_app | Plan created successfully : 2
+2026-09-02 18:44:55,620 | INFO | insurance_app | Fetching plans list.
+2026-09-02 18:45:38,842 | INFO | insurance_app | Fetching plan by id : 1
+2026-09-02 18:46:29,205 | INFO | insurance_app | Updating plan : 1
+2026-09-02 18:46:29,446 | INFO | insurance_app | Plan updated successfully : 1
+2026-09-02 18:47:49,900 | INFO | insurance_app | Creating customer : anjali.customer@example.com
+2026-09-02 18:47:50,280 | INFO | insurance_app | Customer created successfully : 1, self-registered=False
+2026-09-02 18:48:31,826 | INFO | insurance_app | Creating customer : vikram.customer@example.com
+2026-09-02 18:48:32,303 | INFO | insurance_app | Customer created successfully : 2, self-registered=False
+2026-09-02 18:49:18,986 | INFO | insurance_app | Fetching customers list.
+2026-09-02 18:49:52,123 | INFO | insurance_app | Fetching customer by id : 1
+2026-09-02 18:50:34,100 | INFO | insurance_app | Updating customer : 1
+2026-09-02 18:50:34,295 | INFO | insurance_app | Customer updated successfully : 1
+2026-09-02 18:52:05,198 | INFO | insurance_app | Creating policy : customer 1, plan 1
+2026-09-02 18:52:05,347 | INFO | insurance_app | Policy created successfully : 1, number POL-2026-798073
+2026-09-02 18:53:36,974 | INFO | insurance_app | Login attempt : ravi.agent@example.com
+2026-09-02 18:53:37,241 | INFO | insurance_app | Login successful : ravi.agent@example.com
+2026-09-02 18:53:48,579 | INFO | insurance_app | Login attempt : ravi.agent@example.com
+2026-09-02 18:53:48,830 | INFO | insurance_app | Login successful : ravi.agent@example.com
+2026-09-02 18:54:19,922 | INFO | insurance_app | Login attempt : sunita.claims@example.com
+2026-09-02 18:54:20,183 | INFO | insurance_app | Login successful : sunita.claims@example.com
+2026-09-02 18:54:28,784 | INFO | insurance_app | Login attempt : sunita.claims@example.com
+2026-09-02 18:54:29,037 | INFO | insurance_app | Login successful : sunita.claims@example.com
+2026-09-02 18:56:47,468 | INFO | insurance_app | Login attempt : karan.finance@example.com
+2026-09-02 18:56:47,740 | INFO | insurance_app | Login successful : karan.finance@example.com
+2026-09-02 18:56:57,502 | INFO | insurance_app | Login attempt : karan.finance@example.com
+2026-09-02 18:56:57,758 | INFO | insurance_app | Login successful : karan.finance@example.com
+2026-09-02 18:57:25,061 | INFO | insurance_app | Login attempt : ravi.agent@example.com
+2026-09-02 18:57:25,315 | INFO | insurance_app | Login successful : ravi.agent@example.com
+2026-09-02 18:57:54,273 | INFO | insurance_app | Creating policy : customer 2, plan 1
+2026-09-02 18:57:55,051 | INFO | insurance_app | Policy created successfully : 2, number POL-2026-453068
+2026-09-02 18:58:34,259 | INFO | insurance_app | Fetching policies list.
+2026-09-02 18:58:45,862 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:46:36,213 | WARNING | insurance_app | HTTP 401 : Could not validate credentials. : GET /api/v1/policies/1
+2026-09-03 13:46:43,674 | INFO | insurance_app | Login attempt : ravi.agent@example.com
+2026-09-03 13:46:43,951 | INFO | insurance_app | Login successful : ravi.agent@example.com
+2026-09-03 13:46:48,414 | INFO | insurance_app | Fetching policy by id : 1
+2026-09-03 13:47:21,802 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:47:50,819 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:47:58,053 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:48:04,379 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:48:12,591 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:49:55,939 | INFO | insurance_app | Fetching policies list.
+2026-09-03 13:51:25,946 | INFO | insurance_app | Updating policy : 1
+2026-09-03 13:51:27,374 | INFO | insurance_app | Policy updated successfully : 1
+2026-09-03 13:52:01,249 | INFO | insurance_app | Activating policy : 1
+2026-09-03 13:52:08,525 | INFO | insurance_app | Policy document PDF generated : generated_files/policy_documents\policy_1.pdf
+2026-09-03 13:52:10,251 | INFO | insurance_app | Policy activated successfully : 1
+2026-09-03 14:00:26,533 | INFO | insurance_app | Activating policy : 2
+2026-09-03 14:00:26,728 | INFO | insurance_app | Policy document PDF generated : generated_files/policy_documents\policy_2.pdf
+2026-09-03 14:00:26,891 | INFO | insurance_app | Policy activated successfully : 2
+2026-09-03 14:01:50,660 | INFO | insurance_app | Adding beneficiary to policy : 2
+2026-09-03 14:01:50,899 | INFO | insurance_app | Beneficiary added successfully : 1
+2026-09-03 14:02:36,743 | INFO | insurance_app | Adding beneficiary to policy : 2
+2026-09-03 14:02:38,276 | INFO | insurance_app | Beneficiary added successfully : 2
+2026-09-03 14:02:48,555 | INFO | insurance_app | Fetching beneficiaries for policy : 2
+2026-09-03 14:03:43,424 | INFO | insurance_app | Updating beneficiary : 1
+2026-09-03 14:03:44,556 | INFO | insurance_app | Beneficiary updated successfully : 1
+2026-09-03 14:05:18,298 | INFO | insurance_app | Recording premium payment : policy 2, transaction TXN20260901001
+2026-09-03 14:05:18,570 | INFO | insurance_app | Premium payment recorded successfully : 1, policy activated=False
+2026-09-03 14:06:37,030 | INFO | insurance_app | Fetching payments list.
+2026-09-03 14:07:06,927 | INFO | insurance_app | Fetching payment by id : 1
+2026-09-03 14:07:33,570 | INFO | insurance_app | Fetching payments for policy : 2
+2026-09-03 14:08:08,455 | WARNING | insurance_app | HTTP 404 : Not Found : GET /.well-known/appspecific/com.chrome.devtools.json
+2026-09-03 14:09:02,738 | INFO | insurance_app | Creating claim : policy 2
+2026-09-03 14:09:02,984 | INFO | insurance_app | Claim created successfully : 1, status DRAFT
+2026-09-03 14:11:46,304 | INFO | insurance_app | Fetching claims list.
+2026-09-03 14:12:21,585 | INFO | insurance_app | Fetching claim by id : 1
+2026-09-03 14:13:00,841 | INFO | insurance_app | Updating claim : 1
+2026-09-03 14:13:01,027 | INFO | insurance_app | Claim updated successfully : 1
+2026-09-03 14:13:36,870 | WARNING | insurance_app | HTTP 404 : Not Found : GET /.well-known/appspecific/com.chrome.devtools.json
+2026-09-03 14:14:02,277 | INFO | insurance_app | Submitting claim : 1
+2026-09-03 14:14:02,398 | INFO | insurance_app | Claim submitted successfully : 1
+2026-09-03 14:23:13,818 | WARNING | insurance_app | HTTP 401 : Could not validate credentials. : POST /api/v1/claims/1/documents
+2026-09-03 14:51:27,385 | INFO | insurance_app | Login attempt : vikram.customer@example.com
+2026-09-03 14:51:27,654 | INFO | insurance_app | Login successful : vikram.customer@example.com
+2026-09-03 14:51:57,219 | INFO | insurance_app | Login attempt : vikram.customer@example.com
+2026-09-03 14:51:57,466 | INFO | insurance_app | Login successful : vikram.customer@example.com
+2026-09-03 14:52:53,682 | INFO | insurance_app | Uploading document for claim : 1, type MEDICAL_REPORT
+2026-09-03 14:52:53,685 | INFO | insurance_app | Claim document saved : generated_files/claim_uploads\claim_1_96e036b70eaf4799b2daccc4e02dfd00.pdf
+2026-09-03 14:52:53,946 | INFO | insurance_app | Claim document uploaded successfully : 1
+2026-09-03 16:35:30,336 | WARNING | insurance_app | HTTP 401 : Could not validate credentials. : GET /api/v1/claims/1/documents
+2026-09-03 16:35:36,997 | INFO | insurance_app | Login attempt : vikram.customer@example.com
+2026-09-03 16:35:37,319 | INFO | insurance_app | Login successful : vikram.customer@example.com
+2026-09-03 16:35:43,496 | INFO | insurance_app | Fetching documents for claim : 1
+2026-09-03 16:38:46,628 | INFO | insurance_app | Login attempt : admin@example.com
+2026-09-03 16:38:46,906 | INFO | insurance_app | Login successful : admin@example.com
+2026-09-03 16:38:52,450 | INFO | insurance_app | Verifying claim document : 1, status VERIFIED
+2026-09-03 16:38:52,644 | INFO | insurance_app | Claim document verified successfully : 1

@@ -1,0 +1,67 @@
+# docker-compose.yml
+
+services:
+
+  redis:
+    image: redis:latest
+    container_name: insurance-redis
+    ports:
+      - "6380:6379"
+    restart: unless-stopped
+
+  app:
+    build: .
+    container_name: insurance-app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # inside docker's own network, containers reach each other by
+      # service name, not localhost - this overrides whatever .env has
+      # for local use
+      REDIS_HOST: redis
+      DATABASE_URL: sqlite:////app/data/insurance_platform.db
+    volumes:
+      - ./data:/app/data
+      - ./generated_files:/app/generated_files
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  celery_worker:
+    build: .
+    container_name: insurance-celery-worker
+    command: celery -A app.celery_app worker --loglevel=info
+    env_file:
+      - .env
+    environment:
+      REDIS_HOST: redis
+      DATABASE_URL: sqlite:////app/data/insurance_platform.db
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+    volumes:
+      - ./data:/app/data
+      - ./generated_files:/app/generated_files
+    depends_on:
+      - redis
+      - app
+    restart: unless-stopped
+
+  celery_beat:
+    build: .
+    container_name: insurance-celery-beat
+    command: celery -A app.celery_app beat --loglevel=info
+    env_file:
+      - .env
+    environment:
+      REDIS_HOST: redis
+      DATABASE_URL: sqlite:////app/data/insurance_platform.db
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - redis
+      - app
+    restart: unless-stopped

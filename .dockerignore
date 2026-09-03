@@ -1,0 +1,10 @@
+.venv
+__pycache__
+*.pyc
+.git
+.env
+*.db
+generated_files/
+logs/
+celerybeat-schedule
+.pytest_cache

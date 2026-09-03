@@ -158,3 +158,43 @@ WHERE users.role = ?
 2026-09-03 17:09:18,350 | INFO | insurance_app | Generating claim type breakdown report.
 2026-09-03 17:09:42,717 | INFO | insurance_app | Generating top paying customers report.
 2026-09-03 17:10:08,712 | INFO | insurance_app | Generating policy status distribution report.
+2026-09-03 17:34:01,746 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:01,746 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:01,799 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:01,799 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:05,977 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:05,978 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:06,053 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:06,054 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:10,560 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:10,560 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:10,633 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:10,633 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:28,691 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:28,692 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:28,890 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:28,891 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:32,215 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:32,215 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:32,271 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:32,271 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:41,953 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:41,954 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:42,083 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:42,083 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:34:49,835 | INFO | insurance_app | Application starting.
+2026-09-03 17:34:49,835 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:34:49,894 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:34:49,894 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:35:01,114 | INFO | insurance_app | Application starting.
+2026-09-03 17:35:01,114 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:35:01,180 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:35:01,181 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:35:08,663 | INFO | insurance_app | Application starting.
+2026-09-03 17:35:08,663 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:35:08,703 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:35:08,703 | INFO | insurance_app | Application started successfully.
+2026-09-03 17:37:19,219 | INFO | insurance_app | Application starting.
+2026-09-03 17:37:19,220 | INFO | insurance_app | Checking default admin.
+2026-09-03 17:37:19,284 | INFO | insurance_app | Default admin already exists.
+2026-09-03 17:37:19,285 | INFO | insurance_app | Application started successfully.
